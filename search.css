@@ -1,0 +1,281 @@
+﻿/* Earth911 Search Syndication */
+/* --------------------------- */
+
+/* Utilities */
+
+.clear {
+    clear: both;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.search-header {
+    color: #FFF;
+    background-color: #690;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    padding: 80px 20px 20px 20px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+
+.search-footer {
+    color: #333;
+    text-align: right;
+    font-size: 10px;
+    padding: 5px 0;
+}
+
+.search-footer a {
+    color: #111;
+}
+
+/* Search Form */
+
+.search-form {
+    color: #FFF;
+    background-color: #690;
+    padding: 10px 20px;
+}
+
+.search-form label, .search-form input.text, .search-form .example {
+    display: block;
+    float: left;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.search-form label {
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 22px;
+}
+
+.search-form input.text {
+    border: 2px solid #CCC;
+    height: 20px;
+    padding: 5px 10px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.search-form input.submit {
+    width: 90px;
+    height: 34px;
+}
+
+.search-form .example {
+    font-size: 12px;
+    color: #9C3;
+    padding-right: 22px;
+}
+
+/* Search Results */
+
+.search-results ul {
+    margin: 5px 0 5px 0;
+    padding: 0;
+}
+
+.search-results li {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0 10px 45px;
+    overflow: auto;
+    width: 915px;
+    border-top: 1px solid #CCC;
+}
+
+.search-results li.even {
+    background-color: #EEE;
+}
+
+.search-results li.first {
+    border: none;
+}
+
+.search-results img.icon {
+    float: left;
+    margin-top: 4px;
+    margin-left: -35px;
+}
+
+.search-results h2 {
+    color: #060;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.search-results h2 a {
+    color: #060;
+    text-decoration: underline;
+}
+
+.search-results h2 a:hover {
+    color: #690;
+}
+
+.search-results .meta {
+    color: #690;
+    font-size: 12px;
+}
+
+.search-results .phone {
+    color: #666;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.search-results .address {
+    color: #666;
+    font-size: 18px;
+}
+
+.search-results .materials {
+    float: right;
+    width: 300px;
+    margin: 0 10px;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.search-results .material {
+    color: #666;
+    margin-right: 5px;
+    white-space: nowrap;
+}
+
+/* Search Results Pager */
+
+.search-pager {
+    padding: 10px 20px;
+    font-size: 12px;
+    background-color: #690;
+}
+
+.search-pager a {
+    padding: 6px 10px;
+    color: #333;
+    background-color: #FFF;
+    text-decoration: none;
+    border: 1px solid #9C3;
+}
+
+.search-pager a:hover {
+    color: #FFF;
+    background-color: #9C3;
+}
+
+.search-pager .no-prev, .search-pager .no-next {
+    padding: 6px 10px;
+    color: #999;
+    background-color: #EEE;
+}
+
+.search-pager .prev, .search-pager .next {
+    font-weight: bold;
+}
+
+.search-pager .before, .search-pager .after {
+}
+
+.search-pager .current {
+    padding: 6px 10px;
+    color: #FFF;
+    background-color: #060;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+/* Details Pages */
+
+.search-details .back-link {
+    padding: 10px 20px;
+    font-size: 12px;
+    color: #333;
+    background-color: #9C3;
+}
+
+.search-details .back-link a {
+    color: #333;
+    font-weight: bold;
+}
+
+.search-details h1 {
+    margin: 10px 20px;
+}
+
+.search-details .contact {
+    float: right;
+    width: 300px;
+    margin: 12px 20px 0 20px;
+}
+
+.search-details .phone {
+    color: #666;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.search-details .address {
+    color: #666;
+    font-size: 18px;
+}
+
+.search-details .notes {
+    width: 620px;
+    margin: 0 20px 10px 20px;
+    font-size: 12px;    
+}
+
+.search-details .hours {
+    margin: 0 20px 10px 20px;
+    font-size: 12px;    
+}
+
+.search-details .website {
+    margin: 0 20px 10px 20px;
+    font-size: 12px;    
+}
+
+/* Materials Accepted Table */
+
+.search-details table {
+    width: 960px;
+    margin-top: 20px;
+    border-top: 1px solid #CCC;
+}
+
+.search-details th {
+    border-bottom: 1px solid #CCC;
+    text-align: left;
+    font-size: 18px;
+    padding: 20px 20px;
+}
+
+.search-details tr.subhead th {
+    font-size: 12px;
+    padding: 5px 20px;
+}
+
+.search-details tr.subhead {
+    background-color: #DDD;
+}
+
+.search-details tr.even {
+    background-color: #EEE;
+}
+
+.search-details td {
+    border-bottom: 1px solid #CCC;
+    text-align: left;
+    padding: 5px 20px;
+}

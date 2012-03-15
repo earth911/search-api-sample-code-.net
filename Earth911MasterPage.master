@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Earth911MasterPage.master.cs" Inherits="Earth911MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><asp:ContentPlaceHolder ID="title" runat="server">Recycling Center Search</asp:ContentPlaceHolder></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="base.css" type="text/css" />
+    <link rel="stylesheet" href="search.css" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container">
+        <div class="search-header">
+            Your Image<br />
+            or HTML goes here
+        </div>
+    
+        <form class="search-form" action="Search.aspx" method="get">
+            <label for="what">Find recycling centers for</label>
+            <label for="where">Near</label>
+            <br class="clear" />
+            <input type="text" class="text" name="what" id="what" value="<%= Server.HtmlEncode(searchArgs.What) %>" />
+            <input type="text" class="text" name="where" id="where" value="<%= Server.HtmlEncode(searchArgs.Where) %>" />
+            <input type="submit" class="submit" value="Search" />
+            <br class="clear" />
+            <div class="example">aluminum cans, computers, paint</div>
+            <div class="example">zip code</div>
+            <br class="clear" />
+        </form>
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        
+        <div class="search-footer">
+            Powered by <a href="http://earth911.com/">Earth911.com</a>
+        </div>
+    </div>
+</body>
+</html>
